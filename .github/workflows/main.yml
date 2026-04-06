@@ -1,13 +1,13 @@
 name: disable workflow
 
 on:
- push: 
+  push:
+    branches: [ main ]
 
-branches: [ main ]
 jobs:
   disable:
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-   steps:
-     - name: disable
-       run: echo "disable workflow video devops"
+    steps:
+      - name: Disable Step
+        run: echo "disable workflow video devops"
